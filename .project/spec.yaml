@@ -89,7 +89,7 @@ execution:
   - name: Invoke
     type: custom
     class: webapp
-    start_command: invokeai-web --host 0.0.0.0
+    start_command: invokeai-web
     health_check_command: curl -f "http://localhost:9090/"
     stop_command: pkill -f "^/usr/bin/python3 /home/workbench/.local/bin/invokeai-web"
     user_msg: ""
